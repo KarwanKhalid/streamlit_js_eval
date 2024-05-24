@@ -68,6 +68,7 @@ def create_share_link(sharedObject, linkText, successText, component_key=None):
             navigator.share(%s).then(() => {
             document.getElementById("shli").innerHTML = '%s'
             console.log('Thanks for sharing!');
+            console.log(%s);
         })
         .catch(console.error);
         } else {
